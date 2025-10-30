@@ -91,6 +91,10 @@ console.log(giveMeRandom(10));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function area(l1, l2) {
+return l1 * l2;
+}
+console.log(area(5,3));
 
 /* ESERCIZIO 2
  Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
@@ -98,6 +102,16 @@ console.log(giveMeRandom(10));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function crazyDiff(n) {
+    let differenza = Math.abs(n - 19);
+    if (differenza > 19) {
+        return differenza * 3;
+    } else { 
+        return differenza
+    }
+}
+console.log(crazyDiff(10));
+console.log(crazyDiff(30));
 
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
@@ -105,6 +119,14 @@ console.log(giveMeRandom(10));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function codify(string) {
+if (string.startsWith('code')) {
+    return string
+} else {
+    return 'code' + string;
+}
+}
+console.log(codify('more'));
 
 /* ESERCIZIO 4
  Scrivi una funzione chiamata "check3and7" la quale accetta un numero intero positivo come parametro.
@@ -113,9 +135,23 @@ console.log(giveMeRandom(10));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function check3and7(c) {
+if (c % 3 === 0 || c % 7 === 0) {
+    return true;
+} else {
+    return false;
+}
+}
+console.log(check3and7(15));
+console.log(check3and7(4));
 
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function cutString(string) {
+return string.slice(1, -1)
+}
+console.log(cutString('JavaScript')),
+console.log(cutString('vacanza'))
